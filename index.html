@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Renew | Compliance Vivero y Administración</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="cabecera">
+    <div class="marca">RENEW</div>
+
+    <div class="cabecera-texto">
+      FORMACIÓN COMPLIANCE
+    </div>
+  </header>
+
+  <main class="contenedor">
+
+    <!-- PORTADA -->
+    <section id="portada" class="pantalla activa">
+
+      <div class="etiqueta">
+        FORMACIÓN INTERACTIVA
+      </div>
+
+      <h1>
+        Compliance
+        <span>Vivero y Administración</span>
+      </h1>
+
+      <p class="descripcion">
+        Pon a prueba tus conocimientos sobre
+        integridad, proveedores, compras,
+        facturación, conflictos de interés
+        y protección de datos.
+      </p>
+
+      <div class="informacion-reto">
+        <div>
+          <strong>8</strong>
+          <span>Casos prácticos</span>
+        </div>
+
+        <div>
+          <strong>4</strong>
+          <span>Opciones por caso</span>
+        </div>
+
+        <div>
+          <strong>100%</strong>
+          <span>Compliance</span>
+        </div>
+      </div>
+
+      <button id="btnComenzar" class="boton principal">
+        COMENZAR RETO
+      </button>
+
+    </section>
+
+    <!-- PREGUNTAS -->
+    <section id="pantallaPregunta" class="pantalla">
+
+      <div class="barra-superior">
+        <span id="numeroCaso">CASO 1 DE 8</span>
+        <span id="puntuacion">0 PUNTOS</span>
+      </div>
+
+      <div class="barra-progreso">
+        <div id="progreso"></div>
+      </div>
+
+      <div class="tarjeta-pregunta">
+
+        <div class="etiqueta">
+          CASO PRÁCTICO
+        </div>
+
+        <h2 id="tituloCaso"></h2>
+
+        <p id="enunciadoCaso"></p>
+
+        <h3>¿Cómo actuarías?</h3>
+
+        <div id="opciones" class="opciones">
+        </div>
+
+        <button
+          id="btnConfirmar"
+          class="boton principal"
+          disabled>
+          CONFIRMAR RESPUESTA
+        </button>
+
+      </div>
+
+    </section>
+
+    <!-- RESOLUCIÓN -->
+    <section id="pantallaResolucion" class="pantalla">
+
+      <div class="tarjeta-resolucion">
+
+        <div id="resultadoIcono" class="resultado-icono">
+        </div>
+
+        <h2 id="resultadoTitulo"></h2>
+
+        <p id="resultadoMensaje"></p>
+
+        <h3>Explicación de las respuestas</h3>
+
+        <div id="explicaciones"></div>
+
+        <button
+          id="btnSiguiente"
+          class="boton principal">
+          SIGUIENTE CASO
+        </button>
+
+      </div>
+
+    </section>
+
+    <!-- RESULTADOS FINALES -->
+    <section id="pantallaFinal" class="pantalla">
+
+      <div class="etiqueta">
+        RETO COMPLETADO
+      </div>
+
+      <h1>
+        ¡Enhorabuena!
+      </h1>
+
+      <p class="descripcion">
+        Has completado la formación interactiva
+        de Compliance para Vivero y Administración.
+      </p>
+
+      <div class="resultado-final">
+
+        <span>RESULTADO FINAL</span>
+
+        <strong id="puntosFinales">0 / 8</strong>
+
+        <p id="mensajeFinal"></p>
+
+      </div>
+
+      <button
+        id="btnReiniciar"
+        class="boton principal">
+        VOLVER A EMPEZAR
+      </button>
+
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    RENEW · FORMACIÓN COMPLIANCE · ISO 37301 · RGPD
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
